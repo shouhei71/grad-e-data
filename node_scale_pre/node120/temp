@@ -1,0 +1,6 @@
+#! /bin/sh
+
+for i in `ls`
+do
+	R --vanilla --slave --args ./$i < ~/work/cassandra-lite/measure-tool/R/reduceData.R
+done
